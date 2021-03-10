@@ -1,8 +1,16 @@
 package sample;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 
 public class Controller {
@@ -19,6 +27,8 @@ public class Controller {
     AnchorPane mewtwo;
     @FXML
     AnchorPane snorlax;
+    @FXML
+    Button boton1;
 
 
 
@@ -70,5 +80,26 @@ public class Controller {
         mewtwo.setStyle("-fx-background-color: #06799B;");
         snorlax.setStyle("-fx-background-color: #00FFD1;");
     }
+
+    public void abrirMochila(ActionEvent actionEvent) {
+
+        try {
+            Stage stage = new Stage();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Bag.fxml"));
+            BorderPane root = (BorderPane) loader.load();
+            Scene scene = new Scene(root,450,410);
+            stage.setScene(scene);
+            // Oculta los botones de cerrar/minimizar/maximizar
+            stage.initStyle(StageStyle.UNDECORATED);
+            stage.show();
+
+            Bag controller = loader.getController();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+
+
+    }
+
 }
 
