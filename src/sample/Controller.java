@@ -9,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -29,6 +30,7 @@ public class Controller {
     AnchorPane snorlax;
     @FXML
     Button boton1;
+
 
 
 
@@ -81,19 +83,21 @@ public class Controller {
         snorlax.setStyle("-fx-background-color: #00FFD1;");
     }
 
-    public void abrirMochila(ActionEvent actionEvent) {
 
+    @FXML
+    private void abrirMochila(ActionEvent actionEvent) {
         try {
             Stage stage = new Stage();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("Bag.fxml"));
-            BorderPane root = (BorderPane) loader.load();
-            Scene scene = new Scene(root,450,410);
+            AnchorPane root = (AnchorPane) loader.load();
+            Scene scene = new Scene(root,800,500);
             stage.setScene(scene);
-            // Oculta los botones de cerrar/minimizar/maximizar
-            stage.initStyle(StageStyle.UNDECORATED);
             stage.show();
 
             Bag controller = loader.getController();
+            controller.mandarInfoController("bla");
+            controller.setController1(this);
+
         } catch(Exception e) {
             e.printStackTrace();
         }
@@ -101,5 +105,11 @@ public class Controller {
 
     }
 
+    public void recibirInformacion(String info){
+        System.out.println("Hola "+info);
+
+    }
+
+    public void botonSalir(ActionEvent actionEvent) {System.exit(0);}
 }
 

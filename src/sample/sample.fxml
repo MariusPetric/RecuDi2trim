@@ -31,13 +31,13 @@
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
-            <ProgressBar layoutX="30.0" layoutY="132.0" prefHeight="18.0" prefWidth="159.0" progress="0.5" />
+            <ProgressBar fx:id="PB1" layoutX="30.0" layoutY="132.0" prefHeight="18.0" prefWidth="159.0" progress="0.5" />
             <Label layoutX="13.0" layoutY="134.0" text="PS" textFill="#ffc300">
                <font>
                   <Font name="Arial Bold" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="16.0" layoutY="149.0" text="100/200" />
+            <Label fx:id="vida1" layoutX="16.0" layoutY="149.0" text="100/200" />
          </children>
       </AnchorPane>
       <AnchorPane id="mew" fx:id="mew" layoutX="195.0" layoutY="24.0" onMouseClicked="#click2" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #06799B;" GridPane.columnIndex="2">
@@ -57,13 +57,13 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <ProgressBar layoutX="30.0" layoutY="132.0" prefHeight="18.0" prefWidth="159.0" progress="0.5" />
+            <ProgressBar fx:id="PB2" layoutX="30.0" layoutY="132.0" prefHeight="18.0" prefWidth="159.0" progress="0.5" />
             <Label layoutX="13.0" layoutY="134.0" text="PS" textFill="#ffc300">
                <font>
                   <Font name="Arial Bold" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="16.0" layoutY="149.0" text="49/98" />
+            <Label fx:id="vida2" layoutX="16.0" layoutY="149.0" text="49/98" />
          </children>
       </AnchorPane>
       <AnchorPane id="ninetiles" fx:id="ninetiles" layoutX="195.0" layoutY="24.0" onMouseClicked="#click3" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #06799B;" GridPane.rowIndex="1">
@@ -83,13 +83,13 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <ProgressBar layoutX="30.0" layoutY="132.0" prefHeight="18.0" prefWidth="159.0" progress="0.5" />
+            <ProgressBar fx:id="PB3" layoutX="30.0" layoutY="132.0" prefHeight="18.0" prefWidth="159.0" progress="0.5" />
             <Label layoutX="13.0" layoutY="134.0" text="PS" textFill="#ffc300">
                <font>
                   <Font name="Arial Bold" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="16.0" layoutY="149.0" text="30/60" />
+            <Label fx:id="vida3" layoutX="16.0" layoutY="149.0" text="30/60" />
          </children>
       </AnchorPane>
       <AnchorPane id="articuno" fx:id="articuno" layoutX="405.0" layoutY="24.0" onMouseClicked="#click4" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #06799B;" GridPane.columnIndex="1">
@@ -109,13 +109,13 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <ProgressBar layoutX="30.0" layoutY="132.0" prefHeight="18.0" prefWidth="159.0" progress="0.5" />
+            <ProgressBar fx:id="PB4" layoutX="30.0" layoutY="132.0" prefHeight="18.0" prefWidth="159.0" progress="0.5" />
             <Label layoutX="13.0" layoutY="134.0" text="PS" textFill="#ffc300">
                <font>
                   <Font name="Arial Bold" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="16.0" layoutY="149.0" text="150/300" />
+            <Label fx:id="vida4" layoutX="16.0" layoutY="149.0" text="150/300" />
          </children>
       </AnchorPane>
       <AnchorPane id="mewtwo" fx:id="mewtwo" layoutX="195.0" layoutY="24.0" onMouseClicked="#click5" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #06799B;" GridPane.columnIndex="1" GridPane.rowIndex="1">
@@ -135,13 +135,13 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <ProgressBar layoutX="30.0" layoutY="132.0" prefHeight="18.0" prefWidth="159.0" progress="0.5" />
+            <ProgressBar fx:id="PB5" layoutX="30.0" layoutY="132.0" prefHeight="18.0" prefWidth="159.0" progress="0.5" />
             <Label layoutX="13.0" layoutY="134.0" text="PS" textFill="#ffc300">
                <font>
                   <Font name="Arial Bold" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="16.0" layoutY="149.0" text="150/300" />
+            <Label fx:id="vida5" layoutX="16.0" layoutY="149.0" text="150/300" />
          </children>
       </AnchorPane>
       <AnchorPane id="snorlax" fx:id="snorlax" layoutX="195.0" layoutY="24.0" onMouseClicked="#click6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #06799B;" GridPane.columnIndex="2" GridPane.rowIndex="1">
@@ -161,18 +161,18 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <ProgressBar layoutX="30.0" layoutY="132.0" prefHeight="18.0" prefWidth="159.0" progress="0.5" />
+            <ProgressBar fx:id="PB6" layoutX="30.0" layoutY="132.0" prefHeight="18.0" prefWidth="159.0" progress="0.5" />
             <Label layoutX="13.0" layoutY="134.0" text="PS" textFill="#ffc300">
                <font>
                   <Font name="Arial Bold" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="16.0" layoutY="149.0" text="5/10" />
+            <Label fx:id="vida6" layoutX="16.0" layoutY="149.0" text="5/10" />
          </children>
       </AnchorPane>
       <AnchorPane id="elegir" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
          <children>
-            <Label layoutX="175.0" text="Salir" />
+            <Button fx:id="Salir" layoutX="148.0" layoutY="2.0" mnemonicParsing="false" onAction="#botonSalir" text="Salir" />
          </children>
       </AnchorPane>
       <AnchorPane id="salir" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
@@ -180,6 +180,6 @@
             <Label text="Elegir pokemon" />
          </children>
       </AnchorPane>
-      <Button fx:id="boton1" onAction="#abrirMochila" mnemonicParsing="false" text="Mochila" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Button fx:id="boton1" mnemonicParsing="false" onAction="#abrirMochila" text="Mochila" GridPane.columnIndex="1" GridPane.rowIndex="2" />
    </children>
 </GridPane>
